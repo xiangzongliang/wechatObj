@@ -1,13 +1,43 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/addCgi/addCgi"
-  ],
-  "window":{
-    "backgroundColor":"#F6F6F6",
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/tenRoad/tenRoad",
+        "pages/index/index",
+        "pages/addCgi/addCgi"
+        
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "十里小铺",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#ff8800",
+        "color":"#a3a3a3",
+        "list": [
+            {
+                "pagePath": "pages/tenRoad/tenRoad",
+                "text": "十里",
+                "iconPath":"icon/D_tenRoad.png",
+                "selectedIconPath":"icon/tenRoad.png"
+            },
+            {
+                "pagePath": "pages/tenRoad/tenRoad",
+                "text": "订单",
+                "iconPath": "icon/D_order.png",
+                "selectedIconPath": "icon/order.png"
+            },{
+                "pagePath": "pages/tenRoad/tenRoad",
+                "text": "我",
+                "iconPath": "icon/D_my.png",
+                "selectedIconPath": "icon/my.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
 }
