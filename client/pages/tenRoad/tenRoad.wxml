@@ -1,1 +1,17 @@
-<view></view>
+<view>
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+        <block wx:for="{{posterImg}}">
+            <swiper-item>
+                <image src="{{item}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class='tr_centent'>
+        <block wx:for="{{ orderList }}">
+            <view class='tr_order_box'></view>
+        </block>
+    </view>
+    <view wx:if="{{ showFooter }}" class='tr_footer'>
+        ——  我是底线  ——
+    </view>
+</view>
